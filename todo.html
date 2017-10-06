@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Todos</title>
-</head>
-
-<body>
-  <h1  class="page_title" role="banner">Todos</h1>
-  <div class="input_metod" role="section">
-    <button name="select_all_button" role="button">
-      <img src="http://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/select-all.png" alt="select all"/></button>
+  <head>
+    <meta charset="utf-8">
+    <title>Todos</title>
+  </head>
+  <body>
+    <h1  class="page_title" role="banner">Todos</h1>
+    <div class="input_metod">
+      <button name="select_all_button">
+        <img src="http://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/select-all.png" alt="select all"/></button>
       <input type="text" placeholder="What needs to be done?" />
-  </div>
+    </div>
 
-  <div class="active_item">
-    <button>
+    <div class="active_item">
       JS
-      <button><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png" alt="close" /></button>
-    </button>
-  </div>
+      <button><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png" alt="close" name ="close_button"/></button>
+    </div>
 
-  <div class="completed_item">
-    <button name="complete_button" role="button">
+    <div class="completed_item">
       <img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/completed.png" alt="completed"/>
       <s>CSS</s>
-    </button>
-  </div>
-
-  <div class="buttom_panel">
-    <div class="items_left">
-      3 items left
     </div>
-  <div class="show_item_radio">
-      <input type="radio" name="group1"  checked/>All
-      <input type="radio" name="group1" />Active
-      <input type="radio" name="group1" />Completed
-    </div>
-    <button name="clear_all_button" role="button">Clear completed</button>
-  </div>
 
-</body>
+    <div class="buttom_panel">
+      <div class="items_left">
+        3 items left
+      </div>
+      <div class="show_item_radio">
+        <input type="radio" name="group1"  checked/>All
+        <input type="radio" name="group1" />Active
+        <input type="radio" name="group1" />Completed
+      </div>
+      <button name="clear_all_button" role="button">Clear completed</button>
+    </div>
+  </body>
 </html>
